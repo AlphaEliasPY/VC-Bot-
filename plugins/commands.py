@@ -29,7 +29,7 @@ from config import Config
 U=USERNAME
 CHAT=Config.CHAT
 msg=Config.msg
-HOME_TEXT = "<b>Hemlo, [{}](tg://user?id={})\n\nI'm UltronMusic, a Music RoBot for playing music in Channels and Groups 24*7.\n\nI can even Stream Youtube Live in Your Voicechat.\n\nHit /help to know about available commands.</b>"
+HOME_TEXT = "<b>Hola, [{}](tg://user?id={})\n\nSoy AndroidCaveMusic, un robot de música para reproducir música en canales y grupos 24 * 7.\n\nIncluso puedo transmitir Youtube en vivo en su chat de voz.\n\nPega /help conocer los comandos disponibles.</b>"
 HELP = """
 <b>Add the bot and User account in your Group with admin rights.
 Start a VoiceChat.
@@ -65,11 +65,11 @@ You can also use /dplay <song name> to play a song from Deezer.</b>
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('🆘 Support/Updates Channel', url='https://t.me/UltronSupport'),
-        InlineKeyboardButton('⚙️ Support Group', url='https://t.me/UltronSupportChat'),
+        InlineKeyboardButton('🆘 Support/Contact', url='https://t.me/AlphaElias'),
+        InlineKeyboardButton('⚙️ Support Group', url='https://t.me/AndroidCave'),
     ],
     [
-        InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/Warning_MadBoy_is_Back'),
+        InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/AlphaElias'),
         InlineKeyboardButton('🗃 Source', url='https://github.com/UltronRoBo/UltronMusic/'),
     ],
     [
@@ -88,11 +88,11 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-            InlineKeyboardButton('🆘 Support/Updates Channel', url='https://t.me/UltronSupport'),
-            InlineKeyboardButton('⚙️ Support Group', url='https://t.me/UltronSupportChat'),
+            InlineKeyboardButton('🆘 Support/Contact', url='https://t.me/AlphaElias'),
+            InlineKeyboardButton('⚙️ Support Group', url='https://t.me/AndroidCave'),
         ],
         [
-            InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/Warning_MadBoy_is_Back'),
+            InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/AlphaElias'),
             InlineKeyboardButton('🗃 Source', url='https://github.com/UltronRoBo/UltronMusic/'),
         ]
     ]
