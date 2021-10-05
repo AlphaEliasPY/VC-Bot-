@@ -8,5 +8,5 @@ RUN cd /
 RUN pip3 install -U -r requirements.txt
 RUN mkdir /AlphaMusic
 WORKDIR /AlphaMusic
-COPY AlphaMusic.sh /AlphaMusic.sh
+COPY ultron.sh /ultron.sh
 CMD ["/bin/bash", "/AlphaMusic.sh"]
