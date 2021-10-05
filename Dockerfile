@@ -6,7 +6,7 @@ RUN pip3 install -U pip
 COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /AlphaMusic
-WORKDIR /AlphaMusic
+RUN mkdir /UltronMusic
+WORKDIR /UltronMusic
 COPY ultron.sh /ultron.sh
-CMD ["/bin/bash", "/AlphaMusic.sh"]
+CMD ["/bin/bash", "/ultron.sh"]
