@@ -64,7 +64,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     admins = await um.get_admins(Config.CHAT)
     if query.from_user.id not in admins and query.data != "help":
         await query.answer(
-            "😒 Played Joji.mp3",
+            "😒 No tienes permiso para tocar esto. no lo toques",
             show_alert=True
             )
         return
