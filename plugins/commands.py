@@ -29,35 +29,35 @@ from config import Config
 U=USERNAME
 CHAT=Config.CHAT
 msg=Config.msg
-HOME_TEXT = "<b>Hemlo, [{}](tg://user?id={})\n\nSoy AndroidCaveMusic, un robot de música para reproducir música en canales y grupos 24*7.\n\nIncluso puedo transmitir Youtube en vivo en su chat de voz.\n\nPegar /help conocer los comandos disponibles.</b>"
+HOME_TEXT = "<b>Hemlo, [{}](tg://user?id={})\n\nI'm UltronMusic, a Music RoBot for playing music in Channels and Groups 24*7.\n\nI can even Stream Youtube Live in Your Voicechat.\n\nHit /help to know about available commands.</b>"
 HELP = """
-<b>Agregue el bot y la cuenta de usuario en su grupo con derechos de administrador.
-Iniciar un chat de voz.
-Use /play <nombre de la canción> o use / play como respuesta a un archivo de audio o enlace de youtube.
-También puedes usar /dplay <nombre de la canción> para reproducir una canción de Deezer. </b>
-**Comandos comunes**:
-**/play** Responde a un archivo de audio o enlace de YouTube para reproducirlo o usa / reproduce <nombre de la canción>.
-**/dplay** Reproduce música de Deezer, usa / dplay <nombre de la canción>
-**/player** Muestra la canción que se está reproduciendo actualmente.
-**/help** Mostrar ayuda para los comandos
-**/playlist** Muestra la lista de reproducción.
-** Comandos de administrador **:
-**/skip** [n] ... Omitir actual on donde n>= 2
-**/join** Únete al chat de voz.
-**/leave** Dejar el chat de voz actual
-**/vc** Compruebe qué VC está unido.
-**/stop** Deja de jugar.
-**/radio** Iniciar radio.
-**/stopradio** Detiene la transmisión de radio.
-**/replay ** Juega desde el principio.
-**/clean** Elimina archivos PCM RAW no utilizados.
-**/pause** Pausa la reproducción.
-**/resume** Reanudar la reproducción.
-**/volume** Cambiar volumen (0-200).
-**/mute** Mute en VC.
-**/unmute** Activar sonido en VC.
-**/restart** Actualiza y reinicia el Bot.
-"" "
+<b>Add the bot and User account in your Group with admin rights.
+Start a VoiceChat.
+Use /play <song name> or use /play as a reply to an audio file or youtube link.
+You can also use /dplay <song name> to play a song from Deezer.</b>
+**Common Commands**:
+**/play**  Reply to an audio file or YouTube link to play it or use /play <song name>.
+**/dplay** Play music from Deezer, Use /dplay <song name>
+**/player**  Show current playing song.
+**/help** Show help for commands
+**/playlist** Shows the playlist.
+**Admin Commands**:
+**/skip** [n] ...  Skip current or n where n >= 2
+**/join**  Join voice chat.
+**/leave**  Leave current voice chat
+**/vc**  Check which VC is joined.
+**/stop**  Stop playing.
+**/radio** Start Radio.
+**/stopradio** Stops Radio Stream.
+**/replay**  Play from the beginning.
+**/clean** Remove unused RAW PCM files.
+**/pause** Pause playing.
+**/resume** Resume playing.
+**/volume** Change volume(0-200).
+**/mute**  Mute in VC.
+**/unmute**  Unmute in VC.
+**/restart** Updates & restarts the Bot.
+"""
 
 
 
@@ -65,10 +65,11 @@ También puedes usar /dplay <nombre de la canción> para reproducir una canción
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('⚙️ Support Group', url='https://t.me/AndroidCave'),
+        InlineKeyboardButton('🆘 Support/Updates Channel', url='https://t.me/UltronSupport'),
+        InlineKeyboardButton('⚙️ Support Group', url='https://t.me/UltronSupportChat'),
     ],
     [
-        InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/AlphaElias'),
+        InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/Warning_MadBoy_is_Back'),
         InlineKeyboardButton('🗃 Source', url='https://github.com/UltronRoBo/UltronMusic/'),
     ],
     [
@@ -87,10 +88,11 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Support Group', url='https://t.me/AndroidCave'),
+            InlineKeyboardButton('🆘 Support/Updates Channel', url='https://t.me/UltronSupport'),
+            InlineKeyboardButton('⚙️ Support Group', url='https://t.me/UltronSupportChat'),
         ],
         [
-            InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/AlphaElias'),
+            InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/Warning_MadBoy_is_Back'),
             InlineKeyboardButton('🗃 Source', url='https://github.com/UltronRoBo/UltronMusic/'),
         ]
     ]
@@ -102,4 +104,3 @@ async def show_help(client, message):
         reply_markup=reply_markup
         )
     await um.delete(message)
-
