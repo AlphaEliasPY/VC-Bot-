@@ -2,7 +2,7 @@
 
 # 𝕯𝖊𝖕𝖑𝖔𝖞
 ## ➥ 𝐻𝑒𝑟𝑜𝑘𝑢 _:_ **{𝑬𝑨𝑺𝑰𝑬𝑺𝑻}**
-- Oᴘᴇɴ ᴛʜɪs Lɪɴᴋ [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/AlphaEliasPY/VC-Bot-)
+- Oᴘᴇɴ ᴛʜɪs Lɪɴᴋ  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AlphaEliasPY/VC-Bot-)
 - Gɪᴠᴇ ʏᴏᴜʀ Aᴘᴘ ᴀ Sᴜɪᴛᴀʙʟᴇ & Uɴɪᴏ̨ᴜᴇ ɴᴀᴍᴇ.
 - Eɴᴛᴇʀ ᴀʟʟ ᴛʜᴇ ᴠᴀʟᴜᴇs ᴀsᴋᴇᴅ.
 - Cʟɪᴄᴋ Dᴇᴘʟᴏʏ Aᴘᴘ.
